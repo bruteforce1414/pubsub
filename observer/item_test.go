@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestNewItem(t *testing.T) {
+func Test_NewItem(t *testing.T) {
 
 	type itemForCompare struct {
 		observerList []observer
@@ -25,7 +25,7 @@ func TestNewItem(t *testing.T) {
 	assert.NotEqual(t, testItem2.name, itemForCompare1.name)
 }
 
-func TestRegister(t *testing.T){
+func Test_Register(t *testing.T){
 	testItem1 := NewItem("Nike shirt")
 	observerTest1 := &Customer{Id: "abc@gmail.com"}
 	observerTest2 := &Customer{Id: "xyz@gmail.com"}
@@ -34,4 +34,18 @@ func TestRegister(t *testing.T){
 
 	assert.Equal(t,testItem1.observerList[0].getID(), "abc@gmail.com");
 	assert.Equal(t,testItem1.observerList[1].getID(), "xyz@gmail.com");
+	assert.Equal(t, len(testItem1.observerList), 2);
+
+}
+
+func Test_Deregister(t *testing.T){
+	testItem1 := NewItem("Nike shirt")
+	observerTest1 := &Customer{Id: "abc@gmail.com"}
+	observerTest2 := &Customer{Id: "xyz@gmail.com"}
+	testItem1.Register(observerTest1)
+	testItem1.Register(observerTest2)
+	testItem1.Deregister(observerTest2)
+
+	assert.Equal(t,testItem1.observerList[0].getID(), "abc@gmail.com");
+	assert.Equal(t, len(testItem1.observerList), 1);
 }
