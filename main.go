@@ -1,10 +1,13 @@
 package main
 
-import "github.com/bruteforce1414/pubsub/observer"
+import (
+	"github.com/bruteforce1414/pubsub/observer"
+	"github.com/bruteforce1414/pubsub/customer"
+)
 
 func main() {
 
-	shirtItem := newItem("Nike")
+	shirtItem := observer.NewItem("Nike")
 
 	observerFirst := &customer{id: "abc@gmail.com"}
 	observerSecond := &customer{id: "xyz@gmail.com"}

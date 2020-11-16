@@ -2,7 +2,7 @@ package customer
 
 import "fmt"
 
-type customer struct {
+type Customer struct {
 	id string
 }
 
