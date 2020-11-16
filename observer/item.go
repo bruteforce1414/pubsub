@@ -8,7 +8,7 @@ type item struct {
 	inStock      bool
 }
 
-func newItem(name string) *item {
+func NewItem(name string) *item {
 	return &item{
 		name: name,
 	}
