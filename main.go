@@ -11,6 +11,5 @@ func main() {
 
 	shirtItem.register(observerFirst)
 	shirtItem.register(observerSecond)
-
 	shirtItem.updateAvailability()
 }
