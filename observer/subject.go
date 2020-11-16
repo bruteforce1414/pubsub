@@ -1,7 +1,7 @@
 package observer
 
 type subject interface {
-	register(Observer observer)
-	deregister(Observer observer)
-	notifyAll()
+	Register(Observer observer)
+	Deregister(Observer observer)
+	NotifyAll()
 }
