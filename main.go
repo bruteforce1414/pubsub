@@ -12,7 +12,7 @@ func main() {
 	observerFirst := &customer.Customer{id: "abc@gmail.com"}
 	observerSecond := &customer.Customer{id: "xyz@gmail.com"}
 
-	shirtItem.register(observerFirst)
-	shirtItem.register(observerSecond)
-	shirtItem.updateAvailability()
+	shirtItem.Register(observerFirst)
+	shirtItem.Register(observerSecond)
+	shirtItem.UpdateAvailability()
 }
