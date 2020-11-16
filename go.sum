@@ -1,4 +1,4 @@
-github.com/bruteforce1414/pubsub/customer v0.0.0-20201116084543-bafb70dc2a44 h1:Rsn16F41n7mjE9QS56/kCEM6Tn7pMl31aPlTwNQlWv4=
-github.com/bruteforce1414/pubsub/customer v0.0.0-20201116084543-bafb70dc2a44/go.mod h1:631SG04S/jZIypu4JyHMy+hyl1pJ133+DrIAI8hPnRk=
-github.com/bruteforce1414/pubsub/observer v0.0.0-20201116084543-bafb70dc2a44 h1:1o03sG1/zwY98XRi2cz5eBe1vxf7xpuIgZLLp24EZdE=
-github.com/bruteforce1414/pubsub/observer v0.0.0-20201116084543-bafb70dc2a44/go.mod h1:c+CZQ3Dw4IOpqmajfYcENTuU7MLUKO332Kf67sv1So0=
+github.com/bruteforce1414/pubsub/customer v0.0.0-20201116084839-3c591db24398 h1:GMEAZNb4D+shFI3nGzfPLCnNgwBK1gmUo/H9ehu6Oec=
+github.com/bruteforce1414/pubsub/customer v0.0.0-20201116084839-3c591db24398/go.mod h1:631SG04S/jZIypu4JyHMy+hyl1pJ133+DrIAI8hPnRk=
+github.com/bruteforce1414/pubsub/observer v0.0.0-20201116084839-3c591db24398 h1:8TS6Ofav2YU9sSno34LNdISUSJM1RUpbCiabOhIXW3I=
+github.com/bruteforce1414/pubsub/observer v0.0.0-20201116084839-3c591db24398/go.mod h1:c+CZQ3Dw4IOpqmajfYcENTuU7MLUKO332Kf67sv1So0=

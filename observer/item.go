@@ -13,20 +13,20 @@ func NewItem(name string) *item {
 		name: name,
 	}
 }
-func (i *item) updateAvailability() {
+func (i *item) UpdateAvailability() {
 	fmt.Printf("Item %s is now in stock\n", i.name)
 	i.inStock = true
-	i.notifyAll()
+	i.NotifyAll()
 }
-func (i *item) register(o observer) {
+func (i *item) Register(o observer) {
 	i.observerList = append(i.observerList, o)
 }
 
-func (i *item) deregister(o observer) {
+func (i *item) Deregister(o observer) {
 	i.observerList = removeFromslice(i.observerList, o)
 }
 
-func (i *item) notifyAll() {
+func (i *item) NotifyAll() {
 	for _, observer := range i.observerList {
 		observer.update(i.name)
 	}

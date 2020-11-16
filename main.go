@@ -9,8 +9,8 @@ func main() {
 
 	shirtItem := observer.NewItem("Nike")
 
-	observerFirst := &customer{id: "abc@gmail.com"}
-	observerSecond := &customer{id: "xyz@gmail.com"}
+	observerFirst := &customer.Customer{id: "abc@gmail.com"}
+	observerSecond := &customer.Customer{id: "xyz@gmail.com"}
 
 	shirtItem.register(observerFirst)
 	shirtItem.register(observerSecond)
