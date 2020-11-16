@@ -1,4 +1,4 @@
-package customer
+package observer
 
 import "fmt"
 
